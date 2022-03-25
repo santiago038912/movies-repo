@@ -1,8 +1,14 @@
-my:
-  greeting: Hello world from config server
-  list:
-    values: One, Two, Three, Four
-db:
-  connection: connection-string-here-from-config-server
-  host: 127.0.0.1
-  port: 1200
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health: 
+      enabled: true
+      show-details: always
+    shutdown: 
+      enabled: true
+info:
+  env: 
+    enabled: true
