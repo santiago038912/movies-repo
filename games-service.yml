@@ -7,7 +7,7 @@ spring:
   
   sql:
     init:
-      dataLocations: classPath:/games_service.sql  
+      dataLocations: classPath:/animals_service.sql  
   
   
   jpa:
