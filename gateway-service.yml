@@ -18,11 +18,11 @@ spring:
           enabled: true
           lower-case-service-id: true
       routes:
-        - id: games-service-route
-          uri: lb://games-service
+        - id: movies-service-route
+          uri: lb://movies-service
           predicates:
             - Path=/games/**
-        - id: games-library-service-route
-          uri: lb://games-library-service
+        - id: movies-library-service-route
+          uri: lb://movies-library-service
           predicates:
             - Path=/library/**
