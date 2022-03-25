@@ -21,7 +21,7 @@ spring:
         - id: movies-service-route
           uri: lb://movies-service
           predicates:
-            - Path=/games/**
+            - Path=/movies/**
         - id: movies-library-service-route
           uri: lb://movies-library-service
           predicates:
