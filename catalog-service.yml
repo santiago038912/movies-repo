@@ -7,7 +7,7 @@ spring:
   
   sql:
     init:
-      dataLocations: classpath:/catalog-service.sql  
+      dataLocations: classpath:/movies-catalog-service.sql  
       
   jpa:  
     defer-datasource-initialization: true
