@@ -11,16 +11,6 @@ eureka:
         preferIpAddress: true
        
 spring:
-  config:
-    oauth2:
-      client:
-        registration:
-          github:
-            client-id: f2eb8872a376cd5d10e7
-            client-secret: e466ccbce4d797a7a0f4d16baee94374717e86f9
-  main:
-    web-application-type: reactive
-    allow-bean-definition-overriding: true
   cloud:
     gateway:
       discovery:
