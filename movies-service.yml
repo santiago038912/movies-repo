@@ -2,6 +2,10 @@ spring:
   data:
     mongodb:
       uri: mongodb://localhost:27017/movies
+  jpa:  
+     defer-datasource-initialization: true
+     hibernate:
+       ddlAuto: create-drop
 
 server:
     port: 8081
