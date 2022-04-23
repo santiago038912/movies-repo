@@ -1,18 +1,7 @@
-spring:  
-  datasource:
-    driverClassName: org.h2.Driver
-    url: jdbc:h2:mem:db/library;DB_CLOSE_DELAY=-1
-    username: sa
-    password: sa
-  
-  sql:
-    init:
-      dataLocations: classpath:/movies-catalog-service.sql  
-      
-  jpa:  
-    defer-datasource-initialization: true
-    hibernate:
-      ddlAuto: create-drop
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/catalog
 
 server:
     port: 8082
