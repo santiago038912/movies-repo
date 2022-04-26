@@ -4,7 +4,6 @@ spring:
     enabled: true
     sender: 
       type: rabbit
-    enable: true
   data:
     mongodb:
       uri: mongodb://localhost:27017/movies
