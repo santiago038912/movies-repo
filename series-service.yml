@@ -18,7 +18,7 @@ eureka:
       
       resilience4j.circuitbreaker:
     instances:
-        movies:
+        series:
           allowHealthIndicatorToFail: false
           registerHealthIndicator: true
           slidingWindowSize: 10
