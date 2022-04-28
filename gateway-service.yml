@@ -16,7 +16,6 @@ spring:
       client:
         registration:
           github:
-            #redirectUri: http://localhost:8080
             client-id: f2eb8872a376cd5d10e7
             client-secret: d9ab7c5a2a7ff5c222698c6a3977d8332062febb
   main:
