@@ -7,10 +7,6 @@ spring:
   data:
     mongodb:
       uri: mongodb://localhost:27017/catalog
-  jpa:  
-       defer-datasource-initialization: true
-       hibernate:
-         ddlAuto: create-drop
 
 server:
     port: 8082
@@ -25,14 +21,14 @@ eureka:
     preferIpAddress: true    
       
 resilience4j.circuitbreaker:
-    instances:
-        catalog:
-          allowHealthIndicatorToFail: false
-          registerHealthIndicator: true
-          slidingWindowSize: 10
-          permittedNumberOfCallsInHalfOpenState: 3
-          slidingWindowType: TIME_BASED
-          minimumNumberOfCalls: 4
-          waitDurationInOpenState: 5s
-          failureRateThreshold: 50
-          eventConsumerBufferSize: 10
+  instances:
+      catalog:
+        allowHealthIndicatorToFail: false
+        registerHealthIndicator: true
+        slidingWindowSize: 10
+        permittedNumberOfCallsInHalfOpenState: 3
+        slidingWindowType: TIME_BASED
+        minimumNumberOfCalls: 4
+        waitDurationInOpenState: 5s
+        failureRateThreshold: 50
+        eventConsumerBufferSize: 10
